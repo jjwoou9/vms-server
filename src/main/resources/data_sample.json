@@ -1,0 +1,769 @@
+{
+  "pages": [
+    {
+      "id": "UIudtmcHlD4kU9hr",
+      "frames": [
+        {
+          "component": {
+            "type": "wrapper",
+            "stylable": [
+              "background",
+              "background-color",
+              "background-image",
+              "background-repeat",
+              "background-attachment",
+              "background-position",
+              "background-size"
+            ],
+            "attributes": {
+              "id": "ifyw"
+            },
+            "components": [
+              {
+                "type": "navbar",
+                "classes": [
+                  "navbar"
+                ],
+                "attributes": {},
+                "components": [
+                  {
+                    "type": "navbar-container",
+                    "classes": [
+                      "navbar-container"
+                    ],
+                    "attributes": {
+                      "data-gjs": "navbar"
+                    },
+                    "components": [
+                      {
+                        "type": "link",
+                        "classes": [
+                          "navbar-brand"
+                        ],
+                        "attributes": {
+                          "href": "/"
+                        }
+                      },
+                      {
+                        "type": "navbar-burger-menu",
+                        "classes": [
+                          "navbar-burger"
+                        ],
+                        "attributes": {},
+                        "components": [
+                          {
+                            "type": "navbar-burger-menu-line",
+                            "classes": [
+                              "navbar-burger-line"
+                            ],
+                            "attributes": {}
+                          },
+                          {
+                            "type": "navbar-burger-menu-line",
+                            "classes": [
+                              "navbar-burger-line"
+                            ],
+                            "attributes": {}
+                          },
+                          {
+                            "type": "navbar-burger-menu-line",
+                            "classes": [
+                              "navbar-burger-line"
+                            ],
+                            "attributes": {}
+                          }
+                        ]
+                      },
+                      {
+                        "classes": [
+                          "navbar-items-c"
+                        ],
+                        "attributes": {
+                          "data-gjs": "navbar-items"
+                        },
+                        "components": [
+                          {
+                            "type": "navbar-nav-menu",
+                            "classes": [
+                              "navbar-menu"
+                            ],
+                            "attributes": {},
+                            "components": [
+                              {
+                                "type": "navbar-nav-menu-link",
+                                "classes": [
+                                  "navbar-menu-link"
+                                ],
+                                "attributes": {},
+                                "components": [
+                                  {
+                                    "type": "textnode",
+                                    "content": "Home"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "navbar-nav-menu-link",
+                                "classes": [
+                                  "navbar-menu-link"
+                                ],
+                                "attributes": {},
+                                "components": [
+                                  {
+                                    "type": "textnode",
+                                    "content": "About"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "navbar-nav-menu-link",
+                                "classes": [
+                                  "navbar-menu-link"
+                                ],
+                                "attributes": {},
+                                "components": [
+                                  {
+                                    "type": "textnode",
+                                    "content": "Contact"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "classes": [
+                  "panel"
+                ],
+                "attributes": {
+                  "data-v-65d88ec4": ""
+                },
+                "components": [
+                  {
+                    "type": "text",
+                    "classes": [
+                      "welcome"
+                    ],
+                    "tagName": "h1",
+                    "attributes": {
+                      "data-v-65d88ec4": ""
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Vue Grapes JS Test"
+                      }
+                    ]
+                  },
+                  {
+                    "classes": [
+                      "big-title"
+                    ],
+                    "attributes": {
+                      "data-v-65d88ec4": ""
+                    },
+                    "components": [
+                      {
+                        "type": "text",
+                        "tagName": "span",
+                        "attributes": {
+                          "data-v-65d88ec4": ""
+                        },
+                        "components": [
+                          {
+                            "type": "textnode",
+                            "content": "GrapesJS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Row",
+                "classes": [
+                  {
+                    "name": "gjs-row",
+                    "private": 1
+                  }
+                ],
+                "droppable": ".gjs-cell",
+                "resizable": {
+                  "bl": 0,
+                  "br": 0,
+                  "cl": 0,
+                  "cr": 0,
+                  "tc": 0,
+                  "tl": 0,
+                  "tr": 0,
+                  "minDim": 1
+                },
+                "attributes": {
+                  "id": "iiq1"
+                },
+                "components": [
+                  {
+                    "name": "Cell",
+                    "classes": [
+                      {
+                        "name": "gjs-cell",
+                        "private": 1
+                      }
+                    ],
+                    "draggable": ".gjs-row",
+                    "resizable": {
+                      "bc": 0,
+                      "bl": 0,
+                      "br": 0,
+                      "cl": 0,
+                      "cr": 1,
+                      "tc": 0,
+                      "tl": 0,
+                      "tr": 0,
+                      "step": 0.2,
+                      "minDim": 1,
+                      "currentUnit": 1
+                    },
+                    "attributes": {
+                      "id": "itfp6"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Row",
+                "classes": [
+                  {
+                    "name": "gjs-row",
+                    "private": 1
+                  }
+                ],
+                "droppable": ".gjs-cell",
+                "resizable": {
+                  "bl": 0,
+                  "br": 0,
+                  "cl": 0,
+                  "cr": 0,
+                  "tc": 0,
+                  "tl": 0,
+                  "tr": 0,
+                  "minDim": 1
+                },
+                "attributes": {
+                  "id": "ive1f"
+                },
+                "components": [
+                  {
+                    "name": "Cell",
+                    "classes": [
+                      {
+                        "name": "gjs-cell",
+                        "private": 1
+                      }
+                    ],
+                    "draggable": ".gjs-row",
+                    "resizable": {
+                      "bc": 0,
+                      "bl": 0,
+                      "br": 0,
+                      "cl": 0,
+                      "cr": 1,
+                      "tc": 0,
+                      "tl": 0,
+                      "tr": 0,
+                      "step": 0.2,
+                      "minDim": 1,
+                      "currentUnit": 1
+                    },
+                    "components": [
+                      {
+                        "type": "countdown",
+                        "classes": [
+                          "countdown"
+                        ],
+                        "components": [
+                          {
+                            "classes": [
+                              "countdown-cont"
+                            ],
+                            "tagName": "span",
+                            "attributes": {
+                              "data-js": "countdown"
+                            },
+                            "components": [
+                              {
+                                "classes": [
+                                  "countdown-block"
+                                ],
+                                "components": [
+                                  {
+                                    "classes": [
+                                      "countdown-digit"
+                                    ],
+                                    "attributes": {
+                                      "data-js": "countdown-day"
+                                    }
+                                  },
+                                  {
+                                    "type": "text",
+                                    "classes": [
+                                      "countdown-label"
+                                    ],
+                                    "components": [
+                                      {
+                                        "type": "textnode",
+                                        "content": "days"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "classes": [
+                                  "countdown-block"
+                                ],
+                                "components": [
+                                  {
+                                    "classes": [
+                                      "countdown-digit"
+                                    ],
+                                    "attributes": {
+                                      "data-js": "countdown-hour"
+                                    }
+                                  },
+                                  {
+                                    "type": "text",
+                                    "classes": [
+                                      "countdown-label"
+                                    ],
+                                    "components": [
+                                      {
+                                        "type": "textnode",
+                                        "content": "hours"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "classes": [
+                                  "countdown-block"
+                                ],
+                                "components": [
+                                  {
+                                    "classes": [
+                                      "countdown-digit"
+                                    ],
+                                    "attributes": {
+                                      "data-js": "countdown-minute"
+                                    }
+                                  },
+                                  {
+                                    "type": "text",
+                                    "classes": [
+                                      "countdown-label"
+                                    ],
+                                    "components": [
+                                      {
+                                        "type": "textnode",
+                                        "content": "minutes"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "classes": [
+                                  "countdown-block"
+                                ],
+                                "components": [
+                                  {
+                                    "classes": [
+                                      "countdown-digit"
+                                    ],
+                                    "attributes": {
+                                      "data-js": "countdown-second"
+                                    }
+                                  },
+                                  {
+                                    "type": "text",
+                                    "classes": [
+                                      "countdown-label"
+                                    ],
+                                    "components": [
+                                      {
+                                        "type": "textnode",
+                                        "content": "seconds"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "classes": [
+                              "countdown-endtext"
+                            ],
+                            "tagName": "span",
+                            "attributes": {
+                              "data-js": "countdown-endtext"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Cell",
+                    "classes": [
+                      {
+                        "name": "gjs-cell",
+                        "private": 1
+                      }
+                    ],
+                    "draggable": ".gjs-row",
+                    "resizable": {
+                      "bc": 0,
+                      "bl": 0,
+                      "br": 0,
+                      "cl": 0,
+                      "cr": 1,
+                      "tc": 0,
+                      "tl": 0,
+                      "tr": 0,
+                      "step": 0.2,
+                      "minDim": 1,
+                      "currentUnit": 1
+                    },
+                    "attributes": {
+                      "id": "i5hjw"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "styles": [
+    {
+      "style": {
+        "width": "100%",
+        "display": "table",
+        "padding-top": "10px",
+        "padding-left": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px"
+      },
+      "selectors": [
+        {
+          "name": "gjs-row",
+          "private": 1
+        }
+      ]
+    },
+    {
+      "style": {
+        "width": "100%",
+        "display": "block"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        {
+          "name": "gjs-cell",
+          "private": 1
+        }
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "style": {
+        "width": "100%",
+        "display": "block"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "gjs-cell30"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "style": {
+        "width": "100%",
+        "display": "block"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "gjs-cell70"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "style": {
+        "width": "8%",
+        "height": "75px",
+        "display": "table-cell"
+      },
+      "selectors": [
+        {
+          "name": "gjs-cell",
+          "private": 1
+        }
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "color": "rgb(221, 221, 221)",
+        "width": "100%",
+        "min-height": "50px",
+        "background-color": "rgb(34, 34, 34)"
+      },
+      "selectors": [
+        "navbar"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "width": "95%",
+        "max-width": "950px",
+        "margin-top": "0px",
+        "margin-left": "auto",
+        "margin-right": "auto",
+        "margin-bottom": "0px"
+      },
+      "selectors": [
+        "navbar-container"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "float": "right",
+        "display": "inline-block"
+      },
+      "selectors": [
+        "navbar-items-c"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "state": ":after",
+      "style": {
+        "clear": "both",
+        "content": "\"\"",
+        "display": "block"
+      },
+      "selectors": [
+        "navbar-container"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "color": "inherit",
+        "display": "inline-block",
+        "min-width": "50px",
+        "min-height": "50px",
+        "padding-top": "5px",
+        "padding-left": "5px",
+        "padding-right": "5px",
+        "padding-bottom": "5px",
+        "vertical-align": "top",
+        "text-decoration-line": "none",
+        "text-decoration-color": "initial",
+        "text-decoration-style": "initial",
+        "text-decoration-thickness": "initial"
+      },
+      "selectors": [
+        "navbar-brand"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "float": "right",
+        "display": "block",
+        "margin-top": "0px",
+        "margin-left": "0px",
+        "padding-top": "10px",
+        "margin-right": "0px",
+        "padding-left": "0px",
+        "margin-bottom": "0px",
+        "padding-right": "0px",
+        "padding-bottom": "10px"
+      },
+      "selectors": [
+        "navbar-menu"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "color": "inherit",
+        "display": "inline-block",
+        "margin-top": "0px",
+        "margin-left": "0px",
+        "padding-top": "10px",
+        "margin-right": "0px",
+        "padding-left": "15px",
+        "margin-bottom": "0px",
+        "padding-right": "15px",
+        "padding-bottom": "10px",
+        "text-decoration-line": "none",
+        "text-decoration-color": "initial",
+        "text-decoration-style": "initial",
+        "text-decoration-thickness": "initial"
+      },
+      "selectors": [
+        "navbar-menu-link"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "float": "right",
+        "width": "45px",
+        "cursor": "pointer",
+        "display": "none",
+        "margin-top": "10px",
+        "margin-left": "0px",
+        "padding-top": "5px",
+        "margin-right": "0px",
+        "padding-left": "10px",
+        "margin-bottom": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "5px"
+      },
+      "selectors": [
+        "navbar-burger"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "margin-top": "5px",
+        "margin-left": "0px",
+        "padding-top": "1px",
+        "margin-right": "0px",
+        "padding-left": "1px",
+        "margin-bottom": "5px",
+        "padding-right": "1px",
+        "padding-bottom": "1px",
+        "background-color": "white"
+      },
+      "selectors": [
+        "navbar-burger-line"
+      ]
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "width": "100%",
+        "display": "none"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "navbar-items-c"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "display": "block"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "navbar-burger"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "width": "100%"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "navbar-menu"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "group": "cmp:navbar",
+      "style": {
+        "display": "block"
+      },
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "navbar-menu-link"
+      ],
+      "atRuleType": "media"
+    },
+    {
+      "group": "cmp:countdown",
+      "style": {
+        "text-align": "center"
+      },
+      "selectors": [
+        "countdown"
+      ]
+    },
+    {
+      "group": "cmp:countdown",
+      "style": {
+        "display": "inline-block",
+        "margin-top": "0px",
+        "margin-left": "10px",
+        "padding-top": "10px",
+        "margin-right": "10px",
+        "padding-left": "10px",
+        "margin-bottom": "0px",
+        "padding-right": "10px",
+        "padding-bottom": "10px"
+      },
+      "selectors": [
+        "countdown-block"
+      ]
+    },
+    {
+      "group": "cmp:countdown",
+      "style": {
+        "font-size": "5rem"
+      },
+      "selectors": [
+        "countdown-digit"
+      ]
+    },
+    {
+      "group": "cmp:countdown",
+      "style": {
+        "font-size": "5rem"
+      },
+      "selectors": [
+        "countdown-endtext"
+      ]
+    },
+    {
+      "group": "cmp:countdown",
+      "style": {
+        "display": "inline-block"
+      },
+      "selectors": [
+        "countdown-cont"
+      ]
+    }
+  ]
+}
