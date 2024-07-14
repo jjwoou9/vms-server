@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved Page</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style th:utext="${pageContent.style}"></style>
+</head>
+<body>
+<div id="app" v-html="pageHtml"></div>
+
+<script th:inline="javascript">
+    const app = Vue.createApp({
+        data() {
+            return {
+                pageHtml: /*[[${pageContent.html}]]*/ ''
+            }
+        }
+    });
+    app.mount('#app');
+</script>
+</body>
+</html>

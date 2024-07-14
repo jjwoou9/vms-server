@@ -32,4 +32,11 @@ public class ComponentController {
         model.addAttribute("pageContent", webComponent.getContent());
         return "page";
     }
+
+    @GetMapping("/components/{id}")
+    public String getComponent(@PathVariable Long id, Model model) {
+        var webComponent = webComponentRepository.findById(id).orElseThrow(() -> new RuntimeException("WebComponent not found"));
+        model.addAttribute("pageContent", webComponent.getContent());
+        return "component";
+    }
 }
