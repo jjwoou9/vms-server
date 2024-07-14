@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved Page</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/grapesjs/dist/grapes.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+</head>
+<body>
+<div id="app">
+    <div id="gjs"></div>
+</div>
+
+<script th:inline="javascript">
+    const app = Vue.createApp({
+        mounted() {
+            const editor = grapesjs.init({
+                container: '#gjs',
+                fromElement: true,
+                storageManager: false,
+            });
+
+            const pageContent = /*[[${pageContent}]]*/ '';
+            editor.loadProjectData(JSON.parse(pageContent));
+        }
+    });
+    app.mount('#app');
+</script>
+</body>
+</html>
