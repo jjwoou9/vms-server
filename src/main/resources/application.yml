@@ -1,4 +1,11 @@
 spring:
+  thymeleaf:
+    cache: false  # 캐시 비활성화
+    prefix: classpath:/templates/  # 타임리프 템플릿 위치
+    suffix: .html  # 타임리프 템플릿 확장자
+  devtools:
+    livereload:
+      enabled: true  # Live Reload 활성화
   datasource:
     url: jdbc:postgresql://localhost:5432/grapes
     username: dior

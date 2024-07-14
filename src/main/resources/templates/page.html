@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>Saved Page</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/grapesjs/dist/grapes.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
 </head>
@@ -12,20 +11,48 @@
     <div id="gjs"></div>
 </div>
 
-<script th:inline="javascript">
-    const app = Vue.createApp({
-        mounted() {
-            const editor = grapesjs.init({
-                container: '#gjs',
-                fromElement: true,
-                storageManager: false,
-            });
+<script>
+    (async function() {
+        const editor = await initGrapesJS({ headless: true });
+        const jsonData = await loadProjectData(projectID);
+        editor.loadData(jsonData);
+        const mainPage = editor.Pages.getMain();
+        const wrapper = mainPage.getMainComponent();
+        wrapper.findType('image').map(img => img.set('src', 'placeholder.jpg'));
+        const newData = editor.storeData();
+        await storeProjectData(projectID, newData);
+    })();
 
-            const pageContent = /*[[${pageContent}]]*/ '';
-            editor.loadProjectData(JSON.parse(pageContent));
+    function initGrapesJS(options) {
+        return new Promise((resolve, reject) => {
+            const editor = grapesjs.init(options);
+            editor.on('load', () => resolve(editor));
+            editor.on('error', (error) => reject(error));
+        });
+    }
+
+    async function loadProjectData(projectID) {
+        // Replace with your implementation to load project data
+        // Example implementation:
+        const response = await fetch(`/api/projects/${projectID}`);
+        if (!response.ok) {
+            throw new Error('Failed to load project data');
         }
-    });
-    app.mount('#app');
+        return response.json();
+    }
+
+    async function storeProjectData(projectID, data) {
+        // Replace with your implementation to store project data
+        // Example implementation:
+        const response = await fetch(`/api/projects/${projectID}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        if (!response.ok) {
+            throw new Error('Failed to store project data');
+        }
+    }
 </script>
-</body>
-</html>

@@ -26,6 +26,7 @@ public class ComponentController {
         return saved;
     }
 
+    //https://github.com/GrapesJS/grapesjs/discussions/3672
     @GetMapping("/pages/{id}")
     public String getPage(@PathVariable Long id, Model model) {
         var webComponent = webComponentRepository.findById(id).orElseThrow(() -> new RuntimeException("WebComponent not found"));
