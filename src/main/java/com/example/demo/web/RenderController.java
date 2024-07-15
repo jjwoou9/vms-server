@@ -1,7 +1,7 @@
 package com.example.demo.web;
 
 import com.example.demo.entity.WebComponent;
-import com.example.demo.model.WebComponentRequest;
+import com.example.demo.model.request.WebComponentRequest;
 import com.example.demo.repository.WebComponentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @Controller
 @RequiredArgsConstructor
-public class ComponentController {
+public class RenderController {
 
     private final WebComponentRepository webComponentRepository;
 
@@ -33,6 +33,29 @@ public class ComponentController {
         model.addAttribute("pageContent", webComponent.getContent());
         return "page";
     }
+
+//    @GetMapping("/render/{id}")
+//    public String renderHtml(@PathVariable Long id, Model model)
+//    {
+//        try
+//        {
+//            var page = webComponentRepository.findById(id).orElseThrow(() -> new RuntimeException("WebComponent not found"));
+//
+//            String html = page.getContent().get("mycustom-html");
+//            String css = page.getContent().get("mycustom-css");
+//            String name = page.getName();
+//
+//            model.addAttribute("html", html);
+//            model.addAttribute("css", css);
+//            model.addAttribute("name", name);
+//
+//            return "render";
+//        }
+//        catch (Exception e)
+//        {
+//            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Page Not Found");
+//        }
+//    }
 
     @GetMapping("/components/{id}")
     public String getComponent(@PathVariable Long id, Model model) {
