@@ -18,7 +18,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @SQLRestriction("deleted_at IS NULL")
-public class Page {
+public class Page extends BaseEntity {
 
     @Id
     @GeneratedValue(generator = "uuid")
@@ -30,17 +30,6 @@ public class Page {
 
     @Column
     private String slug;
-
-    @CreatedDate
-    @Column(nullable = false, updatable = false)
-    private ZonedDateTime createdAt = ZonedDateTime.now();
-
-    @LastModifiedDate
-    @Column
-    private ZonedDateTime updatedAt;
-
-    @Column
-    private ZonedDateTime deletedAt;
 
     @OneToOne
     @JoinColumn(name = "content_id")

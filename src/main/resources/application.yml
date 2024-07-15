@@ -7,9 +7,9 @@ spring:
     livereload:
       enabled: true  # Live Reload 활성화
   datasource:
-    url: jdbc:postgresql://localhost:5432/grapes
-    username: dior
-    password: Dodzjtm17!!
+    url: jdbc:postgresql://localhost:5432/vms
+    username: admin
+    password: admin
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
